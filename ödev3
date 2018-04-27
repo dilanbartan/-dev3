@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  int dizi2[]={700,500,300,100,10},a,toplam=0,i;
+  float dizi1[] ={0.7,0.3,0.5,0.2,0,1},canta;
+
+  printf("cantanin agirligini giriniz.\n");
+  scanf ("%f", &canta);
+
+  for(i=0; i<=4 ; i++){
+
+    a= canta / dizi1[i];
+    canta = canta- a* dizi1[i];
+    toplam  =toplam + a* dizi2[i];
+  }
+  printf("toplam : %d", toplam);
+
+    return 0;
+}
